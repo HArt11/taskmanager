@@ -25,31 +25,31 @@
       type="text/css"
     />
 
-    <title>Task manager</title>
+    <title>Crafty Lass</title>
   </head>
   <body>
-    <header>
-      <!-- top nav bar-->
-      <nav class="red darken-1">
-        <div class="nav-wrapper">
-          <a href="{{ url_for('home') }}!" class="brand-logo">Crafty Lass</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-            ><i class="fas fa-bars"></i
-          ></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="">New project</a></li>
-            <li><a href="">Categories</a></li>
-          </ul>
-        </div>
-      </nav>
+<body>
 
-      <!--mobile side nav bar-->
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="{{ url_for('home') }}">Home</a></li>
-        <li><a href="">New project</a></li>
-        <li><a href="">Categories</a></li>
-      </ul>
+    <header>
+        <!-- top navbar -->
+        <nav class="light-green darken-1">
+            <div class="nav-wrapper">
+                <a href="{{ url_for('home') }}" class="brand-logo">Crafty Lass</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="">New Task</a></li>
+                    <li><a href="{{ url_for('categories') }}">Categories</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- mobile sidenav -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="">New Task</a></li>
+            <li><a href="{{ url_for('categories') }}">Categories</a></li>
+        </ul>
     </header>
 
     <main class="containter">{% block content %} {% endblock %}</main>
