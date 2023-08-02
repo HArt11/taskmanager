@@ -47,11 +47,12 @@
 
         <main class="containter">
             <div class="col s12 center-align">
-
+                <div>
+                                    <h1>
+                                        Welcome to the Crafty Lass project manager!
+                                    </h1>
                 <img src="https://images.pexels.com/photos/1266139/pexels-photo-1266139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="needle and thread">
-                <h1>
-                    Welcome to the Crafty Lass project manager!
-                </h1>
+
                 <h2>
                     The Crafty Lass page is designed to help you keep track of all those projects you've pinned on
                     Pinterest, help
@@ -65,9 +66,13 @@
                     to follow which cant
                     be edited/deleted.
                 </p>
+                </div>
 
             </div>
+            <div class="col s12 center-align">
+                <a href="{{ url_for('add_task') }}">Get started</a>
 
+            </div>
            
         </main>
 

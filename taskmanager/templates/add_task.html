@@ -17,7 +17,7 @@
           class="validate"
           required
         />
-        <label for="task_name">Task Name</label>
+        <label for="task_name">Project Name</label>
       </div>
     </div>
     <!-- task description -->
@@ -33,7 +33,24 @@
           class="materialize-textarea validate"
           required
         ></textarea>
-        <label for="task_description">Task Description</label>
+        <label for="task_description">Project description</label>
+      </div>
+    </div>
+    <!-- link to source, to copy and paste-->
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+        <textarea
+          id="task_link"
+          name="task_link"
+          minlength="5"
+          maxlength="300"
+          type="text"
+          class="materialize-textarea validate"
+        ></textarea>
+        <label for="task_description"
+          >(Optional)Copy & paste link to project</label
+        >
       </div>
     </div>
     <!-- due date -->
