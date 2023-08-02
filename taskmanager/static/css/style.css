@@ -13,3 +13,9 @@
   h1 {
       color: rgb(5, 65, 5);
   }
+
+  /**card styling **/
+
+  .card {
+      background-color: purple;
+  }
