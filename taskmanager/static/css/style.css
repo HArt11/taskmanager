@@ -3,8 +3,13 @@
       display: flex;
       min-height: 100vh;
       flex-direction: column;
+      background-color: rgb(201, 211, 201);
   }
 
   main {
       flex: 1 0 auto;
+  }
+
+  h1 {
+      color: rgb(5, 65, 5);
   }
