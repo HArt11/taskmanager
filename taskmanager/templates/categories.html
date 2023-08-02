@@ -24,14 +24,40 @@
         <a
           href="{{ url_for('edit_category', category_id=category.id) }}"
           class="btn green accent-4"
-          >Edit</a
+          >Edit
+        </a>
+        <a href="{{ url_for('delete_category', category_id=category.id) }}" class="btn red accent-4">Delete
+        </a>
+        <!-- modal button below
+        <a
+          href="#modal-{{ category.id }}"
+          class="btn red modal-trigger"
+          >Delete</a
         >
-        <a href="#" class="btn green accent-4">Delete</a>
+        -->    
+        <!-- delete modal
+        <div id="#modal-{{ category.id }}" class="modal">
+          <div class="modal-content">
+            <h4>Are you sure you wish to scrap this Project Category?</h4>
+            <p>This can not be undone!</p>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="{{ url_for('delete_category', category_id=category.id) }}"
+              class="btn green accent-4"
+              >Delete</a
+            >
+            <a href="modal-close" class="btn green accent-4">Cancel</a>
+          </div>
+        </div>
+
+            modal end-->
+       </div> 
       </div>
     </div>
+
+    {% endfor %}
   </div>
 
-  {% endfor %}
+  {% endblock %}
 </div>
-
-{% endblock %}
