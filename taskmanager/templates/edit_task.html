@@ -77,7 +77,7 @@
       <div class="input-field col s12">
         <div class="switch">
           <i
-            class="fas fa-exclamation-circle prefix light-blue-text text-darken-4"
+            class="fas fa-gift prefix light-blue-text text-darken-4"
           ></i>
           <label for="is_urgent">
             {% if task.is_urgent == True %}
@@ -91,6 +91,25 @@
         </div>
       </div>
     </div>
+    <!-- addition of completed check box 
+    <div class="row">
+        <div class="input-field col s12">
+            <div class="switch">
+                <i class="fas fa-check-circle prefix light-blue-text text-darken-4"></i>
+                <label for="is_complete">
+                    {% if task.is_complete == True %}
+                        <input id="is_complete" name="is_complete" type="checkbox" checked>
+                    {% else %}
+                        <input id="is_complete" name="is_complete" type="checkbox">
+                    {% endif %}
+                    <span class="lever"></span>
+                    Complete?
+                </label>
+            </div>
+        </div>
+    </div>
+    -->
+    
     <!-- category id -->
     <div class="row">
       <div class="input-field col s12">

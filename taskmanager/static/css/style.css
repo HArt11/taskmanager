@@ -37,3 +37,21 @@ card {
 h3 {
     color: #311b92;
 }
+
+.column {
+    -webkit-box-flex: 25%;
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px 20px 0;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#imgcol1 {
+    
+}
