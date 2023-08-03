@@ -1,114 +1,49 @@
-<!DOCTYPE html>
+<!--  <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font awesome v 6.4.0-->
+    font awesome v 6.4.0
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Compiled and minified CSS, from Materialize-->
+    Compiled and minified CSS, from Materialize
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 
-    <!-- my css stylesheet-->
+    my css stylesheet
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
 
     <title>Crafty Lass</title>
 </head>
 
-<!-- copied from base and tweaked -->
+ copied from base and tweaked -->
+{% extends "base.html" %} {% block content %}
 <body>
+  <main class="containter">
+    <div class="col s12 center-align">
+      <div>
+        <h1>Welcome to the Crafty Lass project manager!</h1>
+        <img
+          src="https://images.pexels.com/photos/1266139/pexels-photo-1266139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="needle and thread"
+        />
 
-    <body>
+        <h2>
+          The Crafty Lass page is designed to help you keep track of all those
+          crafty projects you've started or pinned on Pinterest, help you
+          remember where you're at, and what you started and when!
+        </h2>
+        <p>
+          Functionality to include: adding new projetcs, links to project found
+          on internet can be copied into the project, upload a photo of what it
+          should look like, vs what its turned out like. Will also include
+          sample patterns to follow which cant be edited/deleted.
+        </p>
+      </div>
+    </div>
+  </main>
+</body>
 
-        <header>
-            <!-- top navbar -->
-            <nav class="light-green darken-1">
-                <div class="nav-wrapper">
-                    <a href="{{ url_for('home') }}" class="brand-logo"><i class="fas fa-palette"></i>Crafty Lass</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('tasks') }}">Current Projects</a></li>
-                    <li><a href="{{ url_for('add_task') }}">Add Project</a></li>
-                    <li><a href="{{ url_for('categories') }}">Categories</a></li>
-                </ul>
-                </div>
-            </nav>
-
-            <!-- mobile sidenav -->
-        <ul class="sidenav" id="mobile-demo">
-            <li><h4 class ="sidemenu center-align"> Crafty Lass Menu</h4></li>
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('tasks') }}">Current Projects</a></li>
-            <li><a href="{{ url_for('add_task') }}">Add Project</a></li>
-            <li><a href="{{ url_for('categories') }}">Categories</a></li>
-        </ul>
-        </header>
-
-        <main class="containter">
-            <div class="col s12 center-align">
-                <div>
-                                    <h1>
-                                        Welcome to the Crafty Lass project manager!
-                                    </h1>
-                <img src="https://images.pexels.com/photos/1266139/pexels-photo-1266139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="needle and thread">
-
-                <h2>
-                    The Crafty Lass page is designed to help you keep track of all those projects you've pinned on
-                    Pinterest, help
-                    you
-                    remember where you're at, and what you started and when!
-                </h2>
-                <p>
-                    Functionality to include: adding new projetcs, links to project found on internet can be copied into
-                    the project, upload
-                    a photo of what it should look like, vs what its turned out like. Will also include sample patterns
-                    to follow which cant
-                    be edited/deleted.
-                </p>
-                </div>
-
-            </div>
-            <div class="col s12 center-align">
-                <a href="{{ url_for('tasks') }}">Continue to projects</a>
-
-            </div>
-    <ul class="collapsible">
-        {% for task in tasks %}
-        <li>
-            <div class="collapsible-header white-text light-blue darken-4">
-                <i class="fas fa-caret-down"></i>
-                <strong>{{ task.task_name}}</strong> : {{ task.due_date }}
-                {% if task.is_urgent == True %}
-                    <i class="fas fa-gift light-blue-text text-lighten-2"></i>
-                {% endif %}
-            </div>
-            <div class="collapsible-body">
-                <strong>{{ task.category }}</strong>
-                <p>{{ task.task_description }}</p>
-            </div>
-        </li>
-        {% endfor %}
-    
-    </ul>;
-           
-        </main>
-
-        <footer class="page-footer pink darken-3">
-            <div class="footer-copyright">
-                <div class="container">
-                    For personal use only
-                    <a class="white-text right" href="https://www.linkedin.com/in/helen-arthur-86670596/"
-                        target="_blank">&copy; Helen Arthur</a>
-                </div>
-            </div>
-        </footer>
-        <!-- Compiled and minified JavaScript, from Materialize -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    </body>
-
-</html>
+{% endblock %}

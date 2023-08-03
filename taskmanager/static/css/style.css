@@ -1,36 +1,39 @@
-  font-family: 'Raleway',
-  sans-serif;
+/** sticky footer from Materialize **/
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #e0f2f1;
+    font-family: 'Raleway',
 
-  /** sticky footer from Materialize **/
-  body {
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-      background-color: #e0f2f1;
-  }
+}
 
-  main {
-      flex: 1 0 auto;
-  }
+main {
+    flex: 1 0 auto;
+}
 
-  h1 {
-      color: rgb(5, 65, 5);
-  }
+h1 {
+    color: rgb(5, 65, 5);
+}
 
-  /**card styling **/
+/**card styling **/
 
-  card {
-      background-color: purple;
-  }
+card {
+    background-color: rgb(124, 87, 124);
+}
 
-  .brand-logo {
-      text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
-  }
+.brand-logo {
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+}
 
-  .nav-wrapper {
-      background-color: rgb(0, 128, 128);
-  }
+.nav-wrapper {
+    background-color: rgb(0, 128, 128);
+}
 
-  .mobile-demo {
-      background-color: #e1bee7;
-  }
+.mobile-demo {
+    background-color: #5a3261;
+}
+
+h3 {
+    color: #311b92;
+}
