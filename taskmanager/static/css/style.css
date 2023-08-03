@@ -52,6 +52,16 @@ h3 {
     width: 100%;
 }
 
-#imgcol1 {
-    
+#comingsoon {
+    text-align: center;
 }
+
+#soon {
+    max-width: 500px;
+    position: center;
+}
+
+img.soon {
+    position: center;
+}
+

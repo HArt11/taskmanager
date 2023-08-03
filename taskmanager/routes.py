@@ -99,3 +99,8 @@ def delete_task(task_id):
     db.session.delete(task)
     db.session.commit()
     return redirect(url_for("tasks"))
+
+
+@app.route("/complete")
+def complete():
+    return render_template("complete.html")
