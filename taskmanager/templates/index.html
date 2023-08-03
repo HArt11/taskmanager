@@ -4,17 +4,16 @@
     <div class="col s12 center-align">
       <div>
         <h1>Welcome to the Crafty Lass project manager!</h1>
-        <img
+        <img class="introimg"
           src="https://images.pexels.com/photos/1266139/pexels-photo-1266139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="needle and thread"
         />
         <div class="row">
             <div class="col s12 center-align">
-                <button type="submit" class="btn-large purple darken-4">
-                    Get started!
-                </button>
+                <a href="{{ url_for('tasks') }}" button type="submit" class="btn-large purple darken-4">Get started!</a>
             </div>
-       
+        </div>
+        <div class="col s10 center-align">
         <h2>
           The Crafty Lass page is designed to help you keep track of all those
           crafty projects you've started or pinned on Pinterest, help you
@@ -26,6 +25,8 @@
           should look like, vs what its turned out like. Will also include
           sample patterns to follow which cant be edited/deleted.
         </p>
+        </div>
+        </div>
       </div>
     </div>
   </main>

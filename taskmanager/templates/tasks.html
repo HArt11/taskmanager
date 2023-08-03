@@ -40,30 +40,29 @@
   </li>
   {% endfor %}
 </ul>
-<span>
-  <div class="row">
-    <div class="col s8 m3">
-      <div class="card">
-        <div class="card-image">
-          <img src="./static/images/crochet1.jpg" />
-          <span class="card-title">Crochet Inspiration</span>
-        </div>
+
+<div class="row">
+  <!--first card-->
+  <div class="column">
+    <div class="card">
+      <div class="card-image">
+        <img src="./static/images/crochet1.jpg" />
+        <span class="card-title">Crochet Inspiration</span>
         <div class="card-content">
           <p>Crochet (def). To hook annoying wool and make things pretty</p>
         </div>
         <div class="card-action">
-          <a href="#">Search Crochet on Pinterest</a>
+          <a href="https://www.pinterest.co.uk/search/pins/?q=crochet%20patterns&rs=typed" target="_blank">Search Crochet on Pinterest</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col s8 m3">
-      <div class="card">
-        <div class="card-image">
-          <img src="./static/images/knitting1.jpg" />
-          <span class="card-title">Knitting Inspiration</span>
-        </div>
+  <!--second card-->
+  <div class="column">
+    <div class="card">
+      <div class="card-image">
+        <img src="./static/images/knitting1.jpg" />
+        <span class="card-title">Knitting Inspiration</span>
         <div class="card-content">
           <p>
             Knitting (def). To stab wool and have it slide off the needles, in
@@ -71,59 +70,51 @@
           </p>
         </div>
         <div class="card-action">
-          <a href="https://www.ravelry.com/invitations"
+          <a href="https://www.ravelry.com/invitations" target="_blank"
             >Sign up for Knitting ideas on Raverly</a
           >
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s8 m3">
-      <div class="card">
-        <div class="card-image">
-          <img src="./static/images/flowers1.jpg" />
-          <span class="card-title">Flower Arranging</span>
         </div>
-        <div class="card-content">
-          <p>
-            Floristry (def). Allowing those who kill their houseplant the joy of
-            some nature in the house
-          </p>
         </div>
-        <div class="card-action">
-          <a
-            href="https://www.pinterest.co.uk/search/pins/?rs=ac&len=2&q=flower%20arrangements%20diy&eq=flower%20arr&etslf=6739"
-            target="_blank"
-            >Search Flower Arrangements on Pinterest</a
-          >
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s8 m3">
-      <div class="card">
-        <div class="card-image">
-          <img src="./static/images/sewing2.jpg" />
-          <span class="card-title">Sewing</span>
-        </div>
-        <div class="card-content">
-          <p>
-            Sewing (def). Take some cloth and make those fancy pants you always
-            dreamed of
-          </p>
-        </div>
-        <div class="card-action">
-          <a
-            href="https://www.pinterest.co.uk/search/pins/?q=easy%20sewing%20patterns&rs=typed"
-            target="_blank"
-            >Search easy Sewing patterns on Pinterest</a
-          >
-        </div>
-      </div>
-    </div>
-  </div>
-</span>
 
-; {% endblock %}
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <img src="./static/images/sewing2.jpg" />
+              <span class="card-title">Sewing</span>
+              <div class="card-content">
+                <p>
+                  Sewing (def). You make those fancy pants of your dreams
+                </p>
+              </div>
+              <div class="card-action">
+        <a href="https://www.pinterest.co.uk/search/pins/?q=easy%20sewing%20patterns&rs=typed" target="_blank">Search easy
+            Sewing patterns on Pinterest</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-image">
+              <img src="./static/images/flowers1.jpg" />
+              <span class="card-title">Flower arranging</span>
+            </div>
+            <div class="card-content">
+              <p>
+                Floristry (def). To make dead flowers look pretty. We know you kill the houseplants
+              </p>
+            </div>
+            <div class="card-action">
+        <a href="https://www.pinterest.co.uk/search/pins/?rs=ac&len=2&q=flower%20arrangements%20diy&eq=flower%20arr&etslf=6739"
+            target="_blank">Search Flower Arrangements on Pinterest</a>
+            </div>
+
+        </div>
+        
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+</div>
