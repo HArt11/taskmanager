@@ -105,8 +105,3 @@ def delete_task(task_id):
 @app.route("/complete")
 def complete():
     return render_template("complete.html")
-
-
-@app.route("/register", methods=["GET", "POST"])
-def register():
-    return render_template("register.html")
