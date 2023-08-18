@@ -24,7 +24,7 @@ The first page is the landing page, which details the purpose of the Crafty Lass
 ![Am I Responsive image of how the landing page looks across different browser sizes](/assets/images/amiresponsive.png) 
 <br>
 
-The second Am I responsive screenshot shows a game in progress. The mobile device showing for this on that webpage doesnt appear to demonstrate the game on a mobile as checking various phone types this was not the case.
+
 
 <br>
 

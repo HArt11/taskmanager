@@ -1,6 +1,7 @@
 from flask import render_template, request, redirect, url_for
 from taskmanager import app, db
 from taskmanager.models import Category, Task
+from werkzeug.security import generate_password_hash, check_password_hash
 
 
 @app.route("/")
@@ -106,3 +107,6 @@ def complete():
     return render_template("complete.html")
 
 
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    return render_template("register.html")
