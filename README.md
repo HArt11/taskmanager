@@ -164,8 +164,6 @@ Raverly offers users the ability to save the patterns and print, but not so much
 
 ## Wireframes
 ***
-I wanted the game to appear the same on all devices, two page wireframes as below for home page
-
 - [Home Page Wireframe](taskmanager/static/wireframes/wf2.jpg)
 <br>
 * The simple hand drawn wireframe for the website layout. Very similar to the task manager walkthrough from Code Institute
