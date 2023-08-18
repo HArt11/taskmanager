@@ -65,7 +65,9 @@ Having a 4 year old that needs constant stimulation or fun things to do, is itse
  ### Research Analysis
   ***
 Research Analysis
-Children like bright colours, playful styles and easy to follow instructions.
+The popularity of crafting and home-based creative projects is booming. Website like Pinterest offer the user the ability to "pin" projects, but these can then get lost in the large number of boards a user can bave. This website is designed to keep track of all these projects in one place, and if you're anything like me, like to start a craft project and then put it down and forget where you're at!
+Raverly offers users the ability to save the patterns and print, but not so much for tracking projects.
+
 <br><br>
 
 ## User Experience Design
@@ -74,12 +76,10 @@ Children like bright colours, playful styles and easy to follow instructions.
 
 <br>
 
-![Screenshots of final homepage design](/assets/images/screenshots/ss1-final.jpg) 
-
+![Screenshots of final homepage design](/taskmanager/static/screenshots/ss1.jpg)
 <br>
 
-* This is a screenshot of the final home page with green backdrop removed. When the timer is clicked, the user can enter the number of minutes for the game
-
+* This is a screenshot of the final home page with the Get started button. The footer and header both contain some degree of navigation. Highligh 1 shows the nav bar on desktops, highlight shows the nav bar as a burger menu, 3 shows the footer with icon link to home page and the "Helen Arthur" takes users to my LinkedIn page for a bit self promotion!
 <br>
 
 ![Screenshots of final timer design](/assets/images/screenshots/ss2-final.jpg)
@@ -106,70 +106,61 @@ Children like bright colours, playful styles and easy to follow instructions.
 
 ## User stories
 ***
-* Users did enjoy the game, and suggested some tweaks such as a larger pool of cards to randomly select from as improvements moving forward. The younger testers found the game entertaining even if only for 5minutes
+* Users liked the ability to search external sites for project ideas.
+* Users found the "gift" slider button userful when adding projects to remind which projects where gift ideas.
+* The "deadline" was designed to encourage the completion of the project
 
 
 <br>
 
 #### First Time Visitor Goals
 
-- As a First Time user, I want to easily understand the main purpose of the game and follow the instructions.
-- As a First Time user, I want to be able to navigate throughout the site pages to find relevant content.
-- As a First Time user, I want to view the website and content clearly on the device I am currently using and switch between devices and have the webpage be responsive.
-
+- As a First Time user, I want to easily understand the main purpose of the page
+- As a First Time user, I want to add new projects to the page
 
 ### Returning Visitor Goals
 
-- As a Returning user, I want to try improve my score.
-- As a Returning user, I may want follow them on social media.
+- As a Returning user, I want to record my projects.
+- As a Returning user, I may want to be able to share my projects with external sites.
+- As a Returning user, I may want to update the "deadline" dates to prioritise my projects
 
 ### Frequent Visitor Goals
 
-- As a Frequent user, I want to beat my previous score, and possibly increase the difficulty.
-- As a Frequent user, I may want to see a variety of dodgy artwork(!)
+- I would like to update my project and mark off when complete.
+- I would like to link my saved projects to their source url.
 
 <br><br>
 
  ## Features
  ***
+ * The user can seek inspiration from the cards displayed on the project (tasks) screen. These have links to external sites such as Pinterest and Ravelry for porject ideas. These all open to the correct url in a new wab for good UX design.
+ * 
  ## Existing Features 
 
 <Br>
 
  * ### Navigation
 ***
- * The user is led through the game by big bright buttons. The page on loading has a landing page with instructions and a "Let's Go!" button to take the user to the game area. 
- * Navigation is very simple and intended for children.
- * When a game is completed, the user simply presses New Game to reset the game area and reshuffle the cards.
+ * The user can either use the burger menu on the side on smaller screens or mobile screens, or on larger desktops and screens, the navigation bar features to the right of the main heading. There is also a logo in the footer which will take the user back to the home page.
   
-<br><br>
-
-* ### The Timer
-***
-
-* The timer is clicked and the user can set an optional timer. The user enters the time in minutes required for the game, and begins to count down.
-* The timer has an interactive pause and play button which will pause and start the timer respectively. This is simply styled with limited text.
-   
-  - The game page is fully responsive.
 <br><br>
 
 * ### Future Features
 ***
-* A more complex timer could be added. To start on first card flip, and stop when game completes.
-* A difficulty selector could be added on the home page. For example, a 3x3 card play area could be displayed when the user selects the easy option, 4x4 for medium and 5x5 for hard.
-* Record of high score could be something that could be added, but this may need a user to log in with the ability for it to display the top high scores.
-* Sounds could also be added to card flips for amusement value, although parents may not be impressed!
+* A user log in and authentication function to be added.
+* Completed projects section to be added, where completed projects can be stored, for future reference if for example a gift or toy was particularly popular. It could be found again with relative ease, including links to the source url.
+* Ability to upload and save images of current and past projects, with completed ones moving to a different database perhaps.
+* The ability to share completed porjects with the craft community, either through forums or social media.
+
 
 <br><br>
 
 ## Design
 ***
    * ### Colour Scheme
-     I wanted a colour scheme based around the chosen background, which was bright. Complementary colours have been used, so yellows, pale greens and purples to catch the eye with bold colouring.
-  * ### Favicon 
-      I used the Favicon.io website to create a favicon for my website. I wanted a cog icon to represent thinking. I used the Font Awesome icon and styled it - using favicon to produce the file.
+     I wanted a colour scheme based around the chosen background, which was bright. Complementary colours have been used, greens and purples to catch the eye with bold colouring.
   * ### Typography
-    I wanted a simple yet playful looking font, so avoided cursive or handwritting styles. The font used was 'Happy Monkey' from Google Fonts.
+    I wanted a simple yet playful looking font, so avoided cursive or handwritting styles. The font used was 'Raleway' from Google Fonts.
   * ### Imagery
     The background imagery was sourced from pexels.com, and the cards themselves drawn by me on Krita using a drawing tablet and pen. Initially these were designed to be placeholder images, however positive feedback (in the form of laughter) from my 4 year old convinced me to develope the game using these badly drawn creations! 
 
@@ -190,28 +181,25 @@ I wanted the game to appear the same on all devices, two page wireframes as belo
 ## Technologies
 ***
 * HTML
-	* This project uses HTML as the main language used to complete the structure of the Website. The Gitpod template used was created by Code Institute
+	* This project uses HTML as the main language used to complete the structure of the Website. The Gitpod template used was created by Code Institute, and then the IDE used was the CodeAnywhere, with Heroku used to host the pooject.
 * CSS
 	* This project uses custom written CSS to style the html.
 * Javascript
-	* This was based on the memory game by CodingNepal, for card flip animations and basic styling with adaptions including a user controlled timer from https://www.youtube.com/watch?v=PIiMSMz7KzM (Easy timer code)
+	* This was based on the task manager walkthrough project as part of the Code Institute learning and adapted.
 * [Font Awesome](https://fontawesome.com/)
-	* Font awesome icons are present throughout the website - the favicon, and the controls for the timer are prefixed with a font awesome icon.  
+	* Font awesome icons are present throughout the website - imported into the base template.
 * [GitHub](https://github.com/)
 	* GitHub was the hosting site used to store the source code for the Website and [Git Pages](https://pages.github.com/) is used for the deployment of the live site.
-* [Gitpod](https://git-scm.com/)
-	* Git was used to create and edit all code used to build the website and store assets. It also functions as version control software to commit and push code to the GitHub repository where the source code is stored.
 * [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools)
 	* Google chromes built in developer tools are used to inspect page elements and help debug issues with the site layout and test different CSS styles. Allows the testing of features/code without editing of your own HTML/CSS.
 * [Krita](https://krita.org/en/)
-	* This was used to create wireframes for 'The Skeleton Plane' stage of UX design. Although this changed slightly during the design and testing.
-    * This free to use programme was also used to produce the card images so that the style and feel of the cards was similar and inkeeping.
+	* Use to add writing to the book image for "coming soon"
 * [MS PAINT](https://support.microsoft.com/en-us/windows/get-microsoft-paint-a6b9578c-ed1c-5b09-0699-4ed8115f9aa9)
-    * Used to edit some of the images present on the website, mainly those used in the navigation bar.
+    * Used to edit some of the images present on the website.
 * [Post CSS](https://postcss.org/)
     * I ran my code through this tool to ensure no errors were present and it was recommended to use to fix any errors with Ipad resolutions. 
-* [Favicon](https://favicon.io/)
-    * Favicon.io was used to make the site favicon - the font icon itself was taken from Font Awesome.
+* [Heroku] (https://heroku.com/)
+  * The hosting platform used for the porject deployment.
 
 <br>
 
@@ -221,7 +209,7 @@ I wanted the game to appear the same on all devices, two page wireframes as belo
  ### Testing
 Testing for this website was done using the built-in Chrome Developer Tools to check responsiveness on different screensizes and general debugging. Testing was also done on an iPhone 10 using Safari and other mobile devices. No issues were found with responsiveness and previous issues have been dealt with through custom screen aspect media queries.
 
-In addition to my own testing, I sent my website link to family and friends and asked for them to test the website out using the same methods listed below. With thanks to Graeme Arthur for peer review and testing, as well as my son, Rufus for his very blunt criticism and laughter.
+In addition to my own testing, I sent my website link to family and friends and asked for them to test the website out using the same methods listed below. With thanks to Graeme Arthur for peer review and testing.
 
 Home page
 
@@ -229,17 +217,11 @@ Home page
 * Verify that the buttons present the user with the correct links and the timer popup. 
 * Ensure that the modals display correctly on all screen sizes and can be closed easily by the user to return to the page behind.
 
-Game page
-* Verify that the game adjusts responsively to various devices and screen sizes
-* Verify the game can be played
+Project page
+* Verify that the project pages adjust responsively to various devices and screen sizes
+* Verify the projects can be updated.
 * Verify that the game can be completed and board disabled when game won.
 * Verify that timer can be started, paused and reset.
-
-
-The website contains no backend functionality therefore testing will concentrate on:
-
-* Testing navigational links open on an external page, as well as the site logo which is designed to redirect to the home page
-* Testing the responsiveness of the website, making sure the layout and navigational features remain user friendly with UX design maintained
 
 
 <br><br>
@@ -267,8 +249,8 @@ The website contains no backend functionality therefore testing will concentrate
 
   ### Feedback from User Testing
 ***
-  The main piece of feedback from my user testing was a clean, following design, with playful contrasting and bright colours.
-  This feedback also identified problems with the game being responsive which were since solved.
+  The addition of user log in would be the next step in improving the site. The ability to store completed projects and upload a picture of the completed project would also be useful which is beyond the scope of this project.
+   
   <br><br>
         
 ### Validator Testing 
@@ -292,7 +274,7 @@ Once the development was in progress, I deployed to Heroku with automatic update
 
 * ### Code
 <br>
-The html, CSS and Javascript code for game was adapted from the TaskManager tutorial on non-relational databases, using a Code Instiute template (CodeAnywhere) with deployment via Heroku.
+The html, CSS and Javascript code for game was adapted from the TaskManager tutorial on non-relational databases, using a Code Instiute template (CodeAnywhere) with deployment via Heroku.,and SQLAlchemy.
 
 I referred to W3Schools, YouTube tutorials, Slack, Stack Overflow and peers when I encountered issues, which were primarily to do with layout issues and media queries.
 
