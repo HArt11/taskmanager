@@ -59,7 +59,9 @@ The first page is the landing page, which details the purpose of the Crafty Lass
 
 ## Project Research 
 ***
-Having a 4 year old that needs constant stimulation or fun things to do, is itself challenging! Anything that keeps the attention span of a pre-schooler for more than 5mins would be a win! 
+As someone who personally starts many a craft project then puts it down, I would like a way of keeping track of my ideas and have almost a "to-do list" for projects. Many a time I've picked up knitting needles with work half on it and wondered what it was or where I was up to!
+That is the inspiration behind the Crafty Lass website. Note - named after myself, not as a website aimed purely at women!
+
 <br><br>
 
  ### Research Analysis
@@ -82,27 +84,27 @@ Raverly offers users the ability to save the patterns and print, but not so much
 * This is a screenshot of the final home page with the Get started button. The footer and header both contain some degree of navigation. Highligh 1 shows the nav bar on desktops, highlight shows the nav bar as a burger menu, 3 shows the footer with icon link to home page and the "Helen Arthur" takes users to my LinkedIn page for a bit self promotion!
 <br>
 
-![Screenshots of final timer design](/assets/images/screenshots/ss2-final.jpg)
-
+![Screenshots of project page design](/taskmanager/static/screenshots/ss2.jpg)
+<br>
+* This shows the "Add new project" button which redircts you to another page (see below)
+* The arrow dropdown allows the user to expand the details of previously started or curent projects.
+* The gift icon (Fontawesome) tells the user that they had planned to complete this as a gift.
+* The date is the aim of completion date. This can be edited later, but helps the user set goals and gain a sense of achievement.
+* The image cards below contain links to some of the most popular craft-inspired website such as Raverly and Pinterest, and take the user to the search term already inputted. For example, the "Easy Sewing patterns" url is the result of searching the term before adding the link to the card.
+* Footer and header both visible and links still working
 <br>
 
-* This screenshot shows the timer in action counting down from the user's choice. It also shows the move counter which counts two card flips as one move. 
-
+![Screenshots of Edit Porject page](/taskmanager/static/screenshots/ss3.jpg)
+<br>
+* This screenshot shows the "Edit task" page where users can alter the Project and save it. It redirects back to the project pages.
 <br>
 
-![Screenshots of final game in progress design](/assets/images/screenshots/ss3-final.jpg) 
+![Screenshots of final New game design](/taskmanager/static/screenshots/ss4.jpg)
+<br>
+* This screeshot shows the "Add New Project Page" the "Catergories page" and the "Coming Soon" page.
+* Within the categories page, the user can add new craft sections and save for updating later.
 
 <br>
-
-* This third screenshot shows the message when the game has been completed and the cards matched, and the number of moves the game was completed in. No more cards can be turned and will remain showing until the New Game button is pressed.
-
-<br>
-
-![Screenshots of final New game design](/assets/images/screenshots/ss4-final.jpg) 
-
-<br>
-
-* Once "New Game" is clicked, the cards are flipped and shuffled, the timer and move counter will be reset and the congratulations message will clear ready for the next game.
 
 ## User stories
 ***
@@ -128,6 +130,7 @@ Raverly offers users the ability to save the patterns and print, but not so much
 
 - I would like to update my project and mark off when complete.
 - I would like to link my saved projects to their source url.
+- I would like to be able to see just my knitting projects, or from a specific category.
 
 <br><br>
 
@@ -151,6 +154,7 @@ Raverly offers users the ability to save the patterns and print, but not so much
 * Completed projects section to be added, where completed projects can be stored, for future reference if for example a gift or toy was particularly popular. It could be found again with relative ease, including links to the source url.
 * Ability to upload and save images of current and past projects, with completed ones moving to a different database perhaps.
 * The ability to share completed porjects with the craft community, either through forums or social media.
+* The ability for users to be able to see their projects by category would be a feature that could be added soon after deployment, but have not been able to include due to time constraints/
 
 
 <br><br>
@@ -162,10 +166,9 @@ Raverly offers users the ability to save the patterns and print, but not so much
   * ### Typography
     I wanted a simple yet playful looking font, so avoided cursive or handwritting styles. The font used was 'Raleway' from Google Fonts.
   * ### Imagery
-    The background imagery was sourced from pexels.com, and the cards themselves drawn by me on Krita using a drawing tablet and pen. Initially these were designed to be placeholder images, however positive feedback (in the form of laughter) from my 4 year old convinced me to develope the game using these badly drawn creations! 
-
+    The background imagery was sourced from pexels.com, and from Bing Image creator, using search terms relevant to the type of image I was lookign for. They were all automatically the same size which made it easier to format on the website.
   * ### Layout
-    The two page layout seemed more professional than a single game page, but limiting this to two pages has kept the overal design very neat and simple.
+    The layout was a very simple design, as its more of a storage and project manager tool than having to be eye-catching and get people attention, as would be the case if this was a marketting page.
 
 <br><br>
 
@@ -173,15 +176,16 @@ Raverly offers users the ability to save the patterns and print, but not so much
 ***
 I wanted the game to appear the same on all devices, two page wireframes as below for home page
 
-- [Home Page Wireframe](assets/images/wireframes/wfhomepage.png)
-- [Game Page Wireframe](assets/images/wireframes/wfgamepage/png)
+- [Home Page Wireframe](taskmanager/static/wireframes/wf2.jpg)
+<br>
+* The simple hand drawn wireframe for the website layout. Very similar to the task manager walkthrough from Code Institute
 
 <br>
 
 ## Technologies
 ***
 * HTML
-	* This project uses HTML as the main language used to complete the structure of the Website. The Gitpod template used was created by Code Institute, and then the IDE used was the CodeAnywhere, with Heroku used to host the pooject.
+	* This project uses HTML as the main language used to complete the structure of the Website. The Gitpod template used was created by Code Institute, and then the IDE used was the CodeAnywhere, with Heroku used to host the project.
 * CSS
 	* This project uses custom written CSS to style the html.
 * Javascript
@@ -199,7 +203,7 @@ I wanted the game to appear the same on all devices, two page wireframes as belo
 * [Post CSS](https://postcss.org/)
     * I ran my code through this tool to ensure no errors were present and it was recommended to use to fix any errors with Ipad resolutions. 
 * [Heroku] (https://heroku.com/)
-  * The hosting platform used for the porject deployment.
+  * The hosting platform used for the project deployment.
 
 <br>
 
