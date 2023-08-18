@@ -2,7 +2,7 @@
 
 This non-relational database was created for my milestone project 3 - Back End Development
 
-The live website can be found .....****heruko link*****
+The live website can be found .....****https://crafty-lass-heroku-df832fd1ff9a.herokuapp.com/*****
 
 The aim was to allow the user to keep track of craft projects started and almost a project to do list
 
@@ -21,18 +21,8 @@ RESPONSIVENESS PLACEHOLDER
 
 The first page is the landing page, which details the purpose of the Crafty Lass task manager.This page is responsive and image resizes nicely for the desktop and mobiles.
 
-![Am I Responsive image of how the landing page looks across different browser sizes](/assets/images/amiresponsive.png) 
+![Am I Responsive image of how the project page looks across different browser sizes](/taskmanager/static/screenshots/response.jpg) 
 <br>
-
-
-
-<br>
-
-![Am I Responsive image of how the game page looks across different browser sizes](/assets/images/finalResponsive.jpg) 
-
-
-<br>
-
 
 - [Crafty Lass Project Manager](#crafty-lass-project-manager)
   - [Crafty Lass Project Manager Overview](#crafty-lass-project-manager-overview)
